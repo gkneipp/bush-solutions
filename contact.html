@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact</title>
-<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="../bush-solutions/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
-  <nav>
+  <nav id="topnav">
     <ul>
       <li><a href="index.html">HOME</a></li>
       <li><a href="about.html">ABOUT</a></li>
-      <li> <a href="brons-journey.html">BRON&#39;S JOURNEY</a></li>
-      <li> <a href="diaries.html">DIARIES</a></li>
-      <li> <a class="active" href="contact.html">CONTACT</a></li>
-    </ul>
+      <li><a href="brons-journey.html">BRON&#39;S JOURNEY</a></li>
+      <li><a href="diaries.html">DIARIES</a></li>
+      <li><a class="active" href="contact.html">CONTACT</a></li>
+	  </ul>
   </nav>
   <section class="content">
   <h1>Contact details</h1>
@@ -35,14 +35,14 @@
       <label for="name-input">Name
       <input type="text" name="Name" id="input"/>
 </label></p>
-<p><label for="name-input">Email 
-  <input type="text" name="Email" id="input"/>
-</label></p>
+<label for="name-input">Email 
+  <input type="contact" name="Email" id="input"/>
+</label>
 
 <p><label for="reasons">
 Reason for contact
 <select name="reason" id="reason">
-    <option value="reason">...</option>
+    <option value="option">...</option>
     <option value="travel">Consulting work</option>
     <option value="multimedia">Training</option>
     <option value="travel">Diaries</option>
@@ -50,19 +50,18 @@ Reason for contact
     </select>
 </label></p>
 
-<p><label for="message">
+<label for="message">
     Message
 <textarea name="extraComments">
 
-</textarea></p>
+</textarea>
 
 <input class="btn-submit" type="submit" value="submit" />
-    </form>
-    <p></p>
-</div>
-</section>
+	</label>
+	</section>
 <footer>
 <p>© Bush Solutions 2023</p>
-</footer>
+	  </footer>
+	</div>
 </body>
 </html>
