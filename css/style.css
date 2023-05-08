@@ -3,31 +3,36 @@
 
 body {
     background: linear-gradient(-20deg,#543005, #8b530f, #bc8434, #ddbd7b, #f2e4bf, #eef1ea, #c3e7e2, #80c9bf, #399890, #0a675f, #0a675f);
-      padding-top: 100px;
-      padding-left: 50px;
-      padding-right: 50px;
+     margin: 0;
   }
 
 /*header*/
 /*NAVBAR STYLES*/
 
 
-nav {
-    position: fixed; 
-    top: 0;
-    background-color: white;
-    border: 5px solid #dbd8ea;
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
+.content {
+	 border: 5px solid #dbd8ea;
+	margin-left: 320px;
+	margin-right: 320px;
+	margin-top: 60px;
+     padding-left: 80px;
+	 padding-right: 80px;
+     padding-top: 20px;
+     padding-bottom: 20px;
       
   }
   
+#topnav {
+	background-color: white;
+	text-align: center;  
+	  border-bottom: 5px solid #bc8434;
+	  padding-top: 15px;
+	  padding-bottom: 5px;
+}
   nav li {
     list-style-type: none;
     display: inline;
     padding-right: 1rem;
-      
   }
   
   nav li > a {
@@ -35,12 +40,13 @@ nav {
       font-size: 25px;  
     text-transform: uppercase;
     width: 100%;
+	  text-align: center;
   
   }
   
   nav li > a:hover {
     text-decoration: underline;
-      color: lightcoral;
+      color: darkgoldenrod;
   }
   
   header nav li > a.active-page {
@@ -49,7 +55,6 @@ nav {
   /*foooter*/
 
 footer {
-    background-color:;
     padding-top: 100px;
     padding-bottom: 10px;
     text-align: center;
