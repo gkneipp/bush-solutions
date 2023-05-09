@@ -25,14 +25,21 @@ body {
 #topnav {
 	background-color: white;
 	text-align: center;  
-	  border-bottom: 5px solid #bc8434;
-	  padding-top: 5px;
-	  padding-bottom: 5px;
+	border-bottom: 5px solid #bc8434;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	overflow: auto;
+	justify-content: space-evenly;
 }
-  nav li {
+nav ul {
+	display: flex;
+ 	flex-direction: row;
+  	justify-content: space-evenly;
+}  
+nav li {
     list-style-type: none;
-    display: inline;
-    padding-right: 1rem;
+    display: inline;	  
   }
   
   nav li > a {
@@ -49,8 +56,8 @@ body {
       color: darkgoldenrod;
   }
   
-  header nav li > a.active-page {
-      color: #004083;
+  nav li > a.active {
+      color: #FFA806;
   }
   /*foooter*/
 
@@ -68,7 +75,7 @@ label {
 
 textarea {
 	display: block;
-	width: 200px;
+	width: 300px;
   height: 100px;
 	border: 1px solid navy;
 }
@@ -98,11 +105,12 @@ blockquote {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
     display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 }
 
@@ -118,6 +126,38 @@ blockquote {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+@media(max-width:1024px){
+  .hamburger{
+    display: block;
+  }
+ .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+ .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+ .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+ .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+ .nav-item{
+    margin: 16px 0;
+  }
+ .nav-menu.active{
+    left: 0;
   }
 }
 
