@@ -4,25 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diaries</title>
-<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="../bush-solutions/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Main Container -->
-<div class="container">
+<div class="topnav" id="myTopnav">
   <!-- Navigation -->
-  <nav id="topnav">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li> <a href="brons-journey.html">BRON&#39;S JOURNEY</a></li>
-      <li> <a class="active" href="diaries.html">DIARIES</a></li>
-      <li> <a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
+    <div id="myLinks">
+      <a href="index.html">BUSH SOLUTIONS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="brons-journey.html">BRON&#39;S JOURNEY</a>
+      <a href="diaries.html">DIARIES</a>
+      <a href="contact.html">CONTACT</a>
+     </div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
   <section class="content">
     <h1>Diaries</h1>
-    <img src="images/canberra-hot-air-balloons.jpg">
+    <img src="images/canberra-hot-air-balloons.jpg" alt="hot air balloons hovering over Lake Burley Griffin">
     <h2>Time Management Principles</h2>
 
 <p>We keep a hold of the anecdote told regarding differing responses from the American and Russian space agencies regarding the dilemma of ball point pens not working in space, due to the absence of gravity. The Americans spent over a million dollars inserting a pressurised unit into the pen to force the ink out, the Russians used pencils! Life in the twenty-first century is rapid and often complex. Some of the tools we use to negotiate need to be complex such as software for accounting and the array of medical equipment for fighting disease. However, when it comes to time management, simplicity is the most successful approach.</p>
@@ -38,5 +40,15 @@
 <footer>
 <p>© Bush Solutions 2023</p>
 </footer>
-</body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	</body>
 </html>
