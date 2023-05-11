@@ -4,25 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bush Solutions</title>
-<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="../bush-solutions/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Main Container -->
-<div class="container">
+<div class="topnav" id="myTopnav">
   <!-- Navigation -->
-    <nav id="topnav">
-      <ul>
-        <li><a class="active" href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li> <a href="brons-journey.html">BRON&#39;S JOURNEY</a></li>
-        <li> <a href="diaries.html">DIARIES</a></li>
-        <li> <a href="contact.html">CONTACT</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-        <i class="fa fa-bars"></i>
-      </ul>
-    </nav>
-
-  <section class="content">
+    <div id="myLinks">
+      <a href="index.html">BUSH SOLUTIONS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="brons-journey.html">BRON&#39;S JOURNEY</a>
+      <a href="diaries.html">DIARIES</a>
+      <a href="contact.html">CONTACT</a>
+     </div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<section class="content">
     <h1>Bush Solutions</h1>
     <img src="images/wellington.jpg" alt="country landscape">
     <h2>Personalised Advice to Suit Your Business</h2>
@@ -42,4 +41,14 @@
 <footer class="flexbox-footer">
     <p>© Bush Solutions 2023</p>
     </footer>
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </html>
