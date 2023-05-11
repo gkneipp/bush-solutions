@@ -22,36 +22,6 @@ body {
       
   }
   
-#topnav {
-	background-color: white;
-	text-align: center;  
-	  border-bottom: 5px solid #bc8434;
-	  padding-top: 5px;
-	  padding-bottom: 5px;
-}
-  nav li {
-    list-style-type: none;
-    display: inline;
-    padding-right: 1rem;
-  }
-  
-  nav li > a {
-    text-decoration: none;
-      font-size: 25px;  
-    text-transform: uppercase;
-    width: 100%;
-	  text-align: center;
-  
-  }
-  
-  nav li > a:hover {
-    text-decoration: underline;
-      color: darkgoldenrod;
-  }
-  
-  nav li > a.active-page {
-      color: #FFA806;
-  }
   /*foooter*/
 
 footer {
@@ -68,7 +38,7 @@ label {
 
 textarea {
 	display: block;
-	width: 200px;
+	width: 250px;
   height: 100px;
 	border: 1px solid navy;
 }
@@ -125,6 +95,7 @@ blockquote {
 .topnav {
   background-color: #333;
   overflow: hidden;
+	text-align: center;
 }
 
 /* Style the links inside the navigation bar */
