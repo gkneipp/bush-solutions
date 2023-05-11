@@ -4,23 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About</title>
-<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="../bush-solutions/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- Main Container -->
-<div class="container">
+<div class="topnav" id="myTopnav">
   <!-- Navigation -->
-  <nav nav id="topnav">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a class="active" href="about.html">ABOUT</a></li>
-      <li> <a href="brons-journey.html">BRON'S JOURNEY</a></li>
-      <li> <a href="diaries.html">DIARIES</a></li>
-      <li> <a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
-  </header>
-
+    <div id="myLinks">
+      <a href="index.html">BUSH SOLUTIONS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="brons-journey.html">BRON&#39;S JOURNEY</a>
+      <a href="diaries.html">DIARIES</a>
+      <a href="contact.html">CONTACT</a>
+     </div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
   <section class="content">
     <h1>About</h1>
     <h2>Michael Kneipp</h2>
@@ -29,8 +29,18 @@
 
 <p>He is also a skilled facilitator and keynote speaker, having delivered AusAID Leadership Programs in Bougainville and Solomon Islands.</p>
 </section>
-<footer class="footer">
-<p>© Bush Solutions 2023</p>
-</footer>
 </body>
+	<footer class="footer">
+<p>© Bush Solutions 2023</p>
+	</footer>
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </html>
