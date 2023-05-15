@@ -21,39 +21,6 @@ body {
      padding-bottom: 20px;
       
   }
-  
-/* Old nav
-#topnav {
-	background-color: white;
-	text-align: center;  
-	  border-bottom: 5px solid #bc8434;
-	  padding-top: 5px;
-	  padding-bottom: 5px;
-}
-  nav li {
-    list-style-type: none;
-    display: inline;
-    padding-right: 1rem;
-  }
-  
-  nav li > a {
-    text-decoration: none;
-      font-size: 25px;  
-    text-transform: uppercase;
-    width: 100%;
-	  text-align: center;
-  
-  }
-  
-  nav li > a:hover {
-    text-decoration: underline;
-      color: darkgoldenrod;
-  }
-  
-  nav li > a.active-page {
-      color: #FFA806;
-  }
-*/
 
   /*foooter*/
 
@@ -178,3 +145,28 @@ h2 {
   display: block;
   font-size: 1.5em;
 }
+
+.bottom-nav {
+	padding-top: 80px;
+	padding-bottom: 15px;
+	text-align: center; 
+  }
+
+.bottom-nav li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 1rem;
+	  
+  }
+
+	.bottom-nav li > a {
+	text-decoration: none;
+	font-size: medium;
+	color: #543005;
+	width: 100%;
+  
+  }
+  .bottom-nav li > a:hover {
+	text-decoration: underline;
+	  color: #0a675f;
+  }
