@@ -11,18 +11,21 @@ body {
 
 
 .content {
+	 border: 5px solid #dbd8ea;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-     	padding-top: 20px;
-     	padding-bottom: 20px;
+     padding-left: 20px;
+	 padding-right: 20px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+      
   }
 
   /*foooter*/
 
 footer {
+    padding-top: 100px;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -62,24 +65,6 @@ blockquote {
   margin: 0 auto;
   padding: 1em;
   border-left: 5px solid #999;
-}
-
-.column {
-  	float: left;
- 	width: 50%;
-	padding: 10px;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -160,28 +145,3 @@ h2 {
   display: block;
   font-size: 1.5em;
 }
-
-.bottom-nav {
-	padding-top: 80px;
-	padding-bottom: 15px;
-	text-align: center; 
-  }
-
-.bottom-nav li {
-	list-style-type: none;
-	display: inline;
-	padding-right: 1rem;
-	  
-  }
-
-	.bottom-nav li > a {
-	text-decoration: none;
-	font-size: medium;
-	color: #543005;
-	width: 100%;
-  
-  }
-  .bottom-nav li > a:hover {
-	text-decoration: underline;
-	  color: #0a675f;
-  }
