@@ -145,3 +145,28 @@ h2 {
   display: block;
   font-size: 1.5em;
 }
+
+* {
+	box-sizing: border-box;
+  }
+  
+  .about-column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+	height: auto;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.about-column {
+	  width: 100%;
+	}
+  }
